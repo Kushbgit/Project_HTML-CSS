@@ -1,0 +1,138 @@
+nav {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+nav .logo {
+    margin: 10px;
+    font-size: 30px;
+    color: aliceblue;
+
+}
+
+nav .fa-magnifying-glass {
+    color: green;
+    z-index: 1;
+}
+
+.searchglass {
+    z-index: -1;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+   
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav a:hover {
+    color: green;
+    background-color: white;
+}
+
+#click {
+    display: none;
+}
+
+@media (max-width:750px) {
+     nav .menu-btn i {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 60px;
+        right: 100%;
+        background-color: black;
+
+
+        display: inline-block;
+        text-align: center;
+        transition: all 0.3s ease;
+
+    }
+
+    #click:checked~ul {
+        right: 0;
+    }
+}
+
+.hero {
+    padding: 10px;
+    background-color: rgb(77, 81, 94);
+}
+
+.hero img {
+    width: 100%;
+
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.cards img {
+    width: 400px;
+}
+.cards a{
+    text-decoration: none;
+    color: black;
+}
+
+.section2 {
+    height: 700px;
+    display: flex;
+    background-color: rgb(114, 176, 29);
+    padding: 100px;
+}
+.content {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.section2 img {
+    margin-left: 100%;
+    border-radius: 15px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+.container{
+    padding-left: 10px;
+}
+.footer {
+    background-color: #3F7D20;
+    
+}
+.row{
+    display: flex;
+    padding: 10px;
+    gap: 50px;
+    
+    
+}
+.row a{
+    color: black;
+    text-decoration: none;
+}
